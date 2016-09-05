@@ -1,0 +1,103 @@
+/*
+Theme Name:       VC THEME
+Theme URI:        http://rayhan.info/
+Version:          1.0.0
+Description:      A simple child theme of Twenty Sixteen for making website using visual composer
+Author:           King Rayhan
+Author URI:       http://rayhan.info
+Template:         twentysixteen
+Template Version: 1.0.1
+GitHub Theme URI: https://github.com/kingRayhan/vctheme
+GitHub Branch:    master
+*/
+@import url('../twentysixteen/style.css');
+
+
+body {
+    background: #fff;
+}
+
+
+@media screen and (min-width: 61.5625em){
+	.site-header {
+	    padding: 0 25px;
+	    padding-top: 0;
+	}
+}
+
+@media screen and (min-width: 44.375em){
+	.site {
+	    margin: 0;
+	}
+}
+
+.site-header {
+    padding: 5px 15px;
+}
+
+.single div#content {
+    margin-top: 65px;
+}
+
+aside#secondary {
+    background: #eee;
+    padding: 20px;
+}
+
+/**
+Get rid of top and bottom sticky border
+*/
+@media screen and (min-width: 48.9375em){
+  body:not(.custom-background-image).admin-bar:before {
+      top: 0;
+  }
+}
+
+@media screen and (min-width: 44.375em){
+  body:not(.custom-background-image):before, body:not(.custom-background-image):after {
+      height: 0;
+  }
+}
+
+
+/**
+ *Template: blank
+ */
+
+.page-template-blank-page-php header.entry-header {
+    display: none;
+}
+.page-template-blank-page-php .site-header {
+    display: none;
+}
+.page-template-blank-page-php footer#colophon {
+    display: none;
+}
+.page-template-blank-page-php footer.entry-footer {
+    display: none;
+}
+@media screen and (min-width: 56.875em){
+  .page-template-blank-page-php .content-area {
+      float: none;
+      margin: auto;
+      width: 100%;
+  }
+}
+
+/**
+ *Template: fullwidth-page
+ */
+
+.page-template-fullwidth-page header.entry-header {
+    display: none;
+}
+.page-template-fullwidth-page footer#colophon {
+    display: none;
+}
+@media screen and (min-width: 56.875em){
+  .page-template-fullwidth-page .content-area {
+      float: none;
+      margin: auto;
+      width: 100%;
+  }
+}

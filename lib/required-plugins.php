@@ -14,6 +14,16 @@ function vctheme_register_required_plugins() {
 	        'required'  => false,
 	    ),
 	    array(
+	        'name'      => 'Easy Smooth Scroll',
+	        'slug'      => 'easy-smooth-scroll',
+	        'required'  => false,
+	    ),
+	    array(
+	        'name'      => 'Scroll UP',
+	        'slug'      => 'scroll-to-up',
+	        'required'  => false,
+	    ),
+	    array(
 	        'name'      => 'myStickymenu',
 	        'slug'      => 'myStickymenu',
 	        'required'  => false,

@@ -14,53 +14,34 @@ function vctheme_enqueue_script() {
 add_action( 'wp_enqueue_scripts', 'vctheme_enqueue_script' );
 
 
-
-add_action( 'init', 'register_portfolio_post_type' );
-function register_portfolio_post_type() {
-	$labels = array(
-		"name" => __( 'Portfolios', '' ),
-		"singular_name" => __( 'Portfolio', '' ),
-		);
-
-	$args = array(
-		"label" => __( 'Portfolios', '' ),
-		"labels" => $labels,
-		"description" => "",
-		"public" => true,
-		"show_ui" => true,
-		"show_in_rest" => false,
-		"rest_base" => "",
-		"has_archive" => true,
-		"show_in_menu" => true,
-		"exclude_from_search" => false,
-		"capability_type" => "post",
-		"map_meta_cap" => true,
-		"hierarchical" => false,
-		"menu_icon" => "dashicons-schedule",		
-		"supports" => array( "title", "editor", "thumbnail", "excerpt", "author", "page-attributes" ),				
-	);
-	register_post_type( "portfolio", $args );
-
-// End of register_portfolio_post_type()
-}
+require_once dirname(__FILE__) . '/lib/required-plugins.php';
 
 
-add_action( 'init', 'register_portfolio_taxanomy' );
-function register_portfolio_taxanomy() {
-	$labels = array(
-		"name" => __( 'portfolio categories', '' ),
-		"singular_name" => __( 'portfolio  category', '' ),
-		);
 
-	$args = array(
-		"label" => __( 'portfolio categories', '' ),
-		"labels" => $labels,
-		"public" => true,
-		"hierarchical" => true,
-		"label" => "portfolio categories"
-	);
-	register_taxonomy( "portfolio_cat", array( "portfolio" ), $args );
 
-// End register_portfolio_taxanomy()
-}
 
+
+
+
+
+// function vctheme_demos() {
+//   return array(
+//     array(
+//       'import_file_name'           => 'Demo Import 1',
+//       'categories'                 => array( 'Category 1', 'Category 2' ),
+//       'import_file_url'            => 'http://www.your_domain.com/ocdi/demo-content.xml',
+//       'import_widget_file_url'     => 'http://www.your_domain.com/ocdi/widgets.json',
+//       'import_customizer_file_url' => 'http://www.your_domain.com/ocdi/customizer.dat',
+//       'import_redux'               => array(
+//         array(
+//           'file_url'    => 'http://www.your_domain.com/ocdi/redux.json',
+//           'option_name' => 'redux_option_name',
+//         ),
+//       ),
+//       'import_preview_image_url'   => 'http://www.your_domain.com/ocdi/preview_import_image1.jpg',
+//       'import_notice'              => __( 'After you import this demo, you will have to setup the slider separately.', 'your-textdomain' ),
+//     )
+
+//   );
+// }
+// add_filter( 'pt-ocdi/import_files', 'vctheme_demos' );

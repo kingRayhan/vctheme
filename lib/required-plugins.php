@@ -18,6 +18,21 @@ function vctheme_register_required_plugins() {
 	        'slug'      => 'myStickymenu',
 	        'required'  => false,
 	    ),
+	    array(
+	        'name'      => 'One Click Demo Import',
+	        'slug'      => 'one-click-demo-import',
+	        'required'  => false,
+	    ),
+	    array(
+	        'name'      => 'One Click Demo Import',
+	        'slug'      => 'one-click-demo-import',
+	        'required'  => false,
+	    ),
+	    array(
+	        'name'      => 'Page Builder: KingComposer - Free Drag and Drop page builder by King-Theme',
+	        'slug'      => 'kingcomposer',
+	        'required'  => true,
+	    ),
 	);
 
 

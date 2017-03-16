@@ -15,14 +15,6 @@ add_action( 'wp_enqueue_scripts', 'vctheme_enqueue_script' );
 
 
 
-/**
- * Include the TGM_Plugin_Activation class.
- */
-require_once '/lib/required-plugins.php';
-
-
-
-
 add_action( 'init', 'register_portfolio_post_type' );
 function register_portfolio_post_type() {
 	$labels = array(

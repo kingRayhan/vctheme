@@ -1,6 +1,7 @@
 # vctheme 1.0.5
+## A very simple child theme of [Twenty Sixteen](https://wordpress.org/themes/twentysixteen/) specially for onepage corporate website 
 
-Some websites using vctheme
+#### Some websites using vctheme
 
 # http://webartsbd.xyz/
 ![](http://image.prntscr.com/image/2d8b48b52ef2490fb44444990ea9f59e.png)
